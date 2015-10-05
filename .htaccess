@@ -1,0 +1,33 @@
+RewriteEngine On
+
+RewriteRule ^$           index.php
+RewriteRule ^([a-z]+)$       index.php?page=$1
+RewriteRule ^([a-z]+)/([a-z]+)$  index.php?page=$1&type=$2 
+
+RewriteRule ^([a-z]+)/([a-z]+)/Penjanje$  index.php?page=$1&type=$2&cat=1
+RewriteRule ^([a-z]+)/([a-z]+)/Padobranstvo$  index.php?page=$1&type=$2&cat=2
+RewriteRule ^([a-z]+)/([a-z]+)/Ronjenje$  index.php?page=$1&type=$2&cat=3
+RewriteRule ^([a-z]+)/([a-z]+)/Rafting$  index.php?page=$1&type=$2&cat=4
+RewriteRule ^([a-z]+)/([a-z]+)/Paraglajding$  index.php?page=$1&type=$2&cat=13
+RewriteRule ^([a-z]+)/([a-z]+)/Backpacking$  index.php?page=$1&type=$2&cat=12
+RewriteRule ^([a-z]+)/([a-z]+)/Kitesurf$  index.php?page=$1&type=$2&cat=11
+RewriteRule ^([a-z]+)/([a-z]+)/Longboard$  index.php?page=$1&type=$2&cat=10
+RewriteRule ^([a-z]+)/([a-z]+)/Biciklizam$  index.php?page=$1&type=$2&cat=9
+RewriteRule ^([a-z]+)/([a-z]+)/Skijanje$  index.php?page=$1&type=$2&cat=8
+RewriteRule ^([a-z]+)/([a-z]+)/Snowboard$  index.php?page=$1&type=$2&cat=7
+RewriteRule ^([a-z]+)/([a-z]+)/Planinarenje$  index.php?page=$1&type=$2&cat=6
+RewriteRule ^([a-z]+)/([a-z]+)/Alpinizam$  index.php?page=$1&type=$2&cat=5
+
+RewriteRule ^([a-z]+)/([a-z]+)/Penjanje/([0-9]+)$  index.php?page=$1&type=$2&cat=1&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Ronjenje/([0-9]+)$  index.php?page=$1&type=$2&cat=3&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Rafting/([0-9]+)$  index.php?page=$1&type=$2&cat=4&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Paraglajding/([0-9]+)$  index.php?page=$1&type=$2&cat=13&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Backpacking/([0-9]+)$  index.php?page=$1&type=$2&cat=12&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Kitesurf/([0-9]+)$  index.php?page=$1&type=$2&cat=11&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Longboard/([0-9]+)$  index.php?page=$1&type=$2&cat=10&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Biciklizam/([0-9]+)$  index.php?page=$1&type=$2&cat=9&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Skijanje/([0-9]+)$  index.php?page=$1&type=$2&cat=8&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Snowboard/([0-9]+)$  index.php?page=$1&type=$2&cat=7&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Planinarenje/([0-9]+)$  index.php?page=$1&type=$2&cat=6&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Alpinizam/([0-9]+)$  index.php?page=$1&type=$2&cat=5&article=$3
+RewriteRule ^([a-z]+)/([a-z]+)/Padobranstvo/([0-9]+)$  index.php?page=$1&type=$2&cat=2&article=$3
